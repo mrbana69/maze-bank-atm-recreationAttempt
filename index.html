@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login ATM - Intesa Sanpaolo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login">
+        <div id="logo-container">
+            <img style="width: 333px;" id="logo" src="logo.png" alt="Logo Utente">
+        </div>
+        <h1 style="text-align: center;">Benvenuto all'ATM</h1>
+        <input type="password" id="pinInput" placeholder="Inserisci il PIN">
+        <button onclick="validatePin()">Accedi</button>
+        <p id="error" class="error">PIN non corretto. Riprova.</p>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

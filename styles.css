@@ -1,0 +1,82 @@
+/* Imposta lo stile generale del body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #f0f4f7, #e1e9f0); /* Sfondo chiaro sfumato */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenitore principale */
+#menu {
+    width: 400px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Titolo di benvenuto */
+#menu h1 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Saldo */
+#menu p {
+    font-size: 18px;
+    color: #5e3434;
+    margin-bottom: 30px;
+}
+
+/* Stile dei bottoni */
+#menu button {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: red; /* rosso tipico bancario */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+
+/* Effetto hover sui bottoni */
+#menu button:hover {
+    background: red;
+}
+
+/* Stile per il messaggio di errore */
+#error {
+    display: none;
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Input PIN */
+#pinInput {
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Centrare contenuto su dispositivi più piccoli */
+@media screen and (max-width: 480px) {
+    #menu {
+        width: 90%;
+    }
+}
